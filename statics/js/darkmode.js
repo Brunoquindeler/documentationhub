@@ -11,8 +11,12 @@ btn.onclick = function() {
 
   if (btn.innerHTML == "OFF"){
     btn.innerHTML = "ON";
+    btn.classList.remove('btn-danger')
+    btn.classList.add('btn-success')
   } else {
     btn.innerHTML = "OFF";
+    btn.classList.remove('btn-success')
+    btn.classList.add('btn-danger')
   }
 
   console.log('teste')
