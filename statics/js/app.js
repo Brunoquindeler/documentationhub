@@ -1,14 +1,12 @@
-var t = document.querySelector('#teste');
+var btnShowMore = document.querySelector('#button-show-more');
 
-t.onclick = function() {
+btnShowMore.onclick = function() {
   
-    if (t.classList.contains('fa-chevron-circle-down')) {
-      t.classList.remove('fa-chevron-circle-down');
-      t.classList.add('fa-chevron-circle-up');
-      console.log("a");
+    if (btnShowMore.classList.contains('fa-chevron-circle-down')) {
+      btnShowMore.classList.remove('fa-chevron-circle-down');
+      btnShowMore.classList.add('fa-chevron-circle-up');
     } else {
-      t.classList.remove('fa-chevron-circle-up');
-      t.classList.add('fa-chevron-circle-down');
-      console.log("b");
+      btnShowMore.classList.remove('fa-chevron-circle-up');
+      btnShowMore.classList.add('fa-chevron-circle-down');
     }
 };
